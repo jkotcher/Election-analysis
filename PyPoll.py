@@ -19,10 +19,12 @@ with open(file_to_load) as election_data:
 # Create a file name with an indirect or direct path
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
-outfile = open(file_to_save, "w")
+with open(file_to_save, "w") as txt_file:
 
 # Write some data to the file
-outfile.write("Hello World")
+    txt_file.write("Counties in the Election\n-----------\nArapahoe\nDenver\nJefferson")
 
-# Close the file
-outfile.close()
+    
+
+
+
