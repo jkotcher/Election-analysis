@@ -6,23 +6,33 @@
 # 5. The winner of the election based on the popular vote.
 import csv
 import os
+
 # Assign a variable for the file to load and the path
-file_to_load = os.path.join("Resources", "election_results.csv")
+file_to_load = os.path.join("Resources", "election_results2.csv")
+
+# Create a variable to save the file to a path
+file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 #Open the election results
 with open(file_to_load) as election_data:
 
 
-# print the file object
-    print(election_data)
+    # To do: read and analyze the election results
 
-# Create a file name with an indirect or direct path
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+    # Read the file object with the reader function
+    file_reader = csv.reader(election_data)
 
-with open(file_to_save, "w") as txt_file:
+    # Read and print the header row
+    headers = next(file_reader)
 
-# Write some data to the file
-    txt_file.write("Counties in the Election\n-----------\nArapahoe\nDenver\nJefferson")
+    print(headers)
+
+    # Print each row in the CSV file
+
+ 
+
+
+
 
     
 
