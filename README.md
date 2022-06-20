@@ -8,7 +8,9 @@ The purpose of this audit was to review the election data of a congressional dis
 ## Election Audit Results
 
 ### Election and Candidate results
-In this election there were over 65534 votes cast.  These votes were cast for one of three candidates who were Charles Stockham, Anthony Doane, and Dianna Degette.  Referring to the code all the requsite parts to retrieve each candidates name and vote count and percentage of the total vote did not run as expected.  The only candidate who appeared when saving results to the output file was Anthony Doane who received 1169 votes which was 1.8%.  In past iterations of the script being ran Charles Stockham did receive 48% of the vote and Diana Degette received 23.0% of the vote.  Below is a block of code where the candidate names were retrieved and votes tallied up.
+1. Raymon Anthony Doane 1169 votes 1.8%
+2. Charles Stockham 48% 31,456
+3. Diana Degette 23.0% 15,072
 
 Charles Stockham won the election with 48% of the vote or 31,456 votes according to past iterations of the code script.
 
@@ -42,8 +44,8 @@ Charles Stockham won the election with 48% of the vote or 31,456 votes according
         
 ### County results
 The counties were also tallied up for total vote coun in each county and the percentage.
-Jefferson: 38855 votes 50.9%
-Denver: 26679 40.7%
+1. Jefferson: 38855 votes 50.9%
+2. Denver: 26679 40.7%
 
 There is a third county, Arapahoe, in this congressional district that was tallied or retrieved by the code script. Jefferson county had the largest turnout.  Here is a code block using the same method as above to get the candidate name to get the county name.
 
